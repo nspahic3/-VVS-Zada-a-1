@@ -14,7 +14,7 @@ namespace Cvjecara
         int ukupanBrojKupovina;
         List<Poklon> kupljeniPokloni;
         List<Buket> kupljeniBuketi;
-        int E = 14;
+        
 
         #endregion
 
