@@ -60,7 +60,6 @@ namespace Cvjecara
         {
             dodaci.Add(d);
             Dodaci = dodaci;
-            dodaci.Add(d);
         }
 
         public void DodajPoklon(Poklon p)
