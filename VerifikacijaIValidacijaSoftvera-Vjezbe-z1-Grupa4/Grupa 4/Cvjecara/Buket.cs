@@ -10,7 +10,7 @@ namespace Cvjecara
     {
         #region Atributi
 
-        List<Cvijet> cvijece;
+        List<Cvijet> cvijeće;
         List<string> dodaci;
         double cijena;
         Poklon poklon;
@@ -18,7 +18,7 @@ namespace Cvjecara
         #endregion
 
 /* PROPERTIES */
-        public List<Cvijet> Cvijeće { get => cvijece; set => cvijece = value; }
+        public List<Cvijet> Cvijeće { get => cvijeće; set => cvijeće = value; }
         public List<string> Dodaci 
         { 
             get => dodaci; 
@@ -38,7 +38,7 @@ namespace Cvjecara
 
         public Buket(double c)
         {
-            cvijece = new List<Cvijet>();
+            cvijeće = new List<Cvijet>();
             dodaci = new List<string>();
             cijena = c;
         }
@@ -53,7 +53,7 @@ namespace Cvjecara
         /// <param name="c"></param>
         public void DodajCvijet(Cvijet c)
         {
-            cvijece.Add(c);
+            cvijeće.Add(c);
         }
 
         public void DodajDodatak(string d)

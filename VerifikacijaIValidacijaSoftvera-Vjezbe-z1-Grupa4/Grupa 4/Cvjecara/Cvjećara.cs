@@ -10,7 +10,7 @@ namespace Cvjecara
     {
         #region Atributi
 
-        List<Cvijet> cvijece;
+        List<Cvijet> cvijeće;
         List<Buket> buketi;
         List<Mušterija> mušterije;
         List<Poklon> naručeniPokloni;

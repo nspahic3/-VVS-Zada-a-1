@@ -16,7 +16,7 @@ namespace Cvjecara
         DateTime datumBranja;
         /* sezona */
         bool sezonsko;
-        int kolicina;
+        int količina;
 
 
 
@@ -56,7 +56,7 @@ namespace Cvjecara
             }
         }
         public bool Sezonsko { get => sezonsko; set => sezonsko = value; }
-        public int Kolicina { get => kolicina; set => kolicina = value; }
+        public int Kolicina { get => količina; set => količina = value; }
 
 
         public Cvijet(Vrsta vrsta, string ime, string boja, DateTime datumBranja, int kol)
@@ -84,7 +84,7 @@ namespace Cvjecara
             int mjesec = DateTime.Now.Month;
 
             if (mjesec < pocetakMjesec || mjesec > krajMjesec || mjesec == pocetakMjesec || mjesec == krajMjesec)
-                kolicina = 0;
+                količina = 0;
         }
 
         public double OdrediSvježinuCvijeća()
