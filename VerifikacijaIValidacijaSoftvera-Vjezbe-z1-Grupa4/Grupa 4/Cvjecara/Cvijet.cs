@@ -68,7 +68,7 @@ namespace Cvjecara
             List<string> sezonskeVrste = new List<string>()
             { "Neven", "Margareta", "Ljiljan" };
             Sezonsko = sezonskeVrste.Contains(vrsta.ToString());
-            Kolicina = kol / 0;
+            Kolicina = kol;
         }
 
 
