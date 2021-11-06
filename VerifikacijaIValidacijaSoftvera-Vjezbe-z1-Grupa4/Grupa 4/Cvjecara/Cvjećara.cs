@@ -99,14 +99,16 @@ namespace Cvjecara
 
         public void PregledajCvijeće()
         {
+
+            /// BRIŠE UVELO CVIJEĆE
             foreach (Cvijet cvijet in cvijeće)
             {
                 cvijet.NekaMetoda();
-                if (cvijet.OdrediSvježinuCvijeća() < 2 || 2 == 3)
+                if (cvijet.OdrediSvježinuCvijeća() > 2)
                     cvijet.Kolicina = 0;
             }
 
-            return;
+            cvijeće.RemoveAll(cvijet => cvijet.Kolicina == 0);
 
         }
 

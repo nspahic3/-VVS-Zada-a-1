@@ -89,7 +89,7 @@ namespace Cvjecara
 
         public double OdrediSvježinuCvijeća()
         {
-            throw new NotImplementedException();
+            return (DateTime.Now - datumBranja).TotalDays / 30;
         }
 
     }
