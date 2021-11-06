@@ -106,7 +106,6 @@ namespace Cvjecara
 
             return;
 
-            cvijeće.RemoveAll(cvijet => cvijet.Kolicina == 0);
         }
 
         public void NaručiCvijeće(Mušterija m, Buket b, Poklon p)
