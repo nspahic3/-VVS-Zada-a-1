@@ -20,7 +20,7 @@ namespace Cvjecara
         #region Konstruktor
 
         public List<Cvijet> Cvijeće { get => cvijeće; }
-        public List<Poklon> NaručeniPokloni { get naručeniPokloni; set => naručeniPokloni = value; }
+        public List<Poklon> NaručeniPokloni { get => naručeniPokloni; set => naručeniPokloni = value; }
 
         #endregion
 
