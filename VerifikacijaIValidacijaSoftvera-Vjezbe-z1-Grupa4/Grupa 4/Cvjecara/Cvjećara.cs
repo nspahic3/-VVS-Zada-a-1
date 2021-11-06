@@ -90,7 +90,9 @@ namespace Cvjecara
 
         public void ObrišiBuket(Buket b)
         {
+            b.Dodaci.Clear();
             b.Dodaci = null;
+            b.Cvijeće.Clear();
             b.Cvijeće = null;
             b.Cijena = 0;
         }

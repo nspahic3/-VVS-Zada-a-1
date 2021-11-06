@@ -61,7 +61,6 @@ namespace Cvjecara
             ukupanBrojKupovina++;
             kupljeniBuketi.Add(b);
             kupljeniPokloni.Add(p);
-            ukupanBrojKupovina = 0;
         }
 
         #endregion
