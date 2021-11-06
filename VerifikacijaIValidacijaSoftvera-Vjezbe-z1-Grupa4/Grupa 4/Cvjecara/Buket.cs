@@ -30,7 +30,7 @@ namespace Cvjecara
                 dodaci = value;
             }
         }
-        public double Cijena { get => cijena; }
+        public double Cijena { get => cijena; set => cijena = value; }
         public Poklon Poklon { get => poklon; }
 
 

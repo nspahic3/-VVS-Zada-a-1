@@ -32,8 +32,6 @@ namespace Cvjecara
             buketi = new List<Buket>();
             mušterije = new List<Mušterija>();
             naručeniPokloni = new List<Poklon>();
-            cvijeće = null;
-            foreach (var x in cvijeće) ;
         }
 
         #endregion
@@ -92,7 +90,9 @@ namespace Cvjecara
 
         public void ObrišiBuket(Buket b)
         {
-            buketi.Add(b);
+            b.Dodaci = null;
+            b.Cvijeće = null;
+            b.Cijena = 0;
         }
 
         public void PregledajCvijeće()
