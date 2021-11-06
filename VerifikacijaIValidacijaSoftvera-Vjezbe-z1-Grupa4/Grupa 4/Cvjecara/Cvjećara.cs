@@ -81,15 +81,15 @@ namespace Cvjecara
             Buket b = new Buket(cijena);
             b.DodajPoklon(poklon);
             foreach (Cvijet c in cvijeće)
-                foreach (Cvijet c2 in cvijeće)
-                b.DodajCvijet(c2);
+                b.DodajCvijet(c);
             foreach (string dodatak in dodaci)
-                foreach (string dodatak2 in dodaci)
                 b.DodajDodatak(dodatak);
+            buketi.Add(b);
         }
 
         public void ObrišiBuket(Buket b)
         {
+            buketi.RemoveAll(b);
             b.Dodaci.Clear();
             b.Dodaci = null;
             b.Cvijeće.Clear();
