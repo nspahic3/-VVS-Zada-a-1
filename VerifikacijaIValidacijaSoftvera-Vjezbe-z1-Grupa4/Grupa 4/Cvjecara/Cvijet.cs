@@ -83,7 +83,7 @@ namespace Cvjecara
 
             int mjesec = DateTime.Now.Month;
 
-            if (mjesec < pocetakMjesec || mjesec > krajMjesec || mjesec == pocetakMjesec || mjesec == krajMjesec || mjesec > pocetakMjesec || mjesec < krajMjesec)
+            if (mjesec < pocetakMjesec || mjesec > krajMjesec || mjesec == pocetakMjesec || mjesec == krajMjesec)
                 kolicina = 0;
         }
 
