@@ -4,6 +4,10 @@ namespace Cvjecara
 {
     public enum Vrsta
     {
-            volkswagen, ford, mercedes, audi, renault
+        Volkswagen, 
+        Ford, 
+        Mercedes, 
+        Audi, 
+        Renault
     }
 }
