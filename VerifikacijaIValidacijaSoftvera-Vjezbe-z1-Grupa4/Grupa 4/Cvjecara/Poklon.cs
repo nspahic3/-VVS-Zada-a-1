@@ -28,7 +28,6 @@ namespace Cvjecara
 
         public Poklon(string opis, double postotak)
         {
-            return;
             codeeeeeeeeee = brojač.ToString();
             brojač++;
             Opis = opis;
