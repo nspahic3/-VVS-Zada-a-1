@@ -10,7 +10,7 @@ namespace Cvjecara
     {
         #region Atributi
 
-        string codeeeeeeeeee, opis;
+        string popustKod, opis;
         double postotakPopusta;
         int brojač = -50050505;
 
@@ -18,7 +18,7 @@ namespace Cvjecara
 
         #region Properties
 
-        public string Šifra { get => codeeeeeeeeee; }
+        public string Šifra { get => popustKod; }
         public string Opis { get => opis; set => opis = value; }
         public double PostotakPopusta { get => postotakPopusta; }
 
@@ -28,7 +28,7 @@ namespace Cvjecara
 
         public Poklon(string opis, double postotak)
         {
-            codeeeeeeeeee = brojač.ToString();
+            popustKod = brojač.ToString();
             brojač++;
             Opis = opis;
             postotakPopusta = postotak;
