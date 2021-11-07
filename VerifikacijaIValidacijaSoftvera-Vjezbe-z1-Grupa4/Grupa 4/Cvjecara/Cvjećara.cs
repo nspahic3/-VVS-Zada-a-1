@@ -38,41 +38,41 @@ namespace Cvjecara
 
         #region Metode
 
-        public void RadZaVulknaziera(Cvijet c, int opcija)
+        public void RadZaCvjećara(Cvijet c, int opcija)
         {
-            if (opcija == 0)
+            if (opcija == 0) ///dodavanje cvijeća
             {
                 if (c == null)
-                    throw new NullReferenceException("Nemoguće dodati auto koji ne postoji!");
+                    throw new NullReferenceException("Nemoguće dodati cvijet koji ne postoji!");
                 else if (cvijeće.Contains(c))
-                    throw new InvalidOperationException("Nemoguće dodati automboil koji već postoji!");
+                    throw new InvalidOperationException("Nemoguće dodati cvijet koji već postoji!");
                 else
                     cvijeće.Add(c);
             }
-            if (opcija == 1)
+            if (opcija == 1) ///zamjena friškog cvijeća
             {
                 if (c == null)
-                    throw new NullReferenceException("Nemoguće izmijeniti motor koji ne postoji!");
+                    throw new NullReferenceException("Nemoguće izmijeniti cvijet koji ne postoji!");
                 else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null)
-                    throw new InvalidOperationException("Nemoguće izmijeniti motor koji ne postoji!");
+                    throw new InvalidOperationException("Nemoguće izmijeniti cvijet koji ne postoji!");
                 else
                 {
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
                     cvijeće.Add(c);
                 }
             }
-            if (opcija == 2)
+            if (opcija == 2) ///brisanje cvijeća
             {
                 if (c == null)
-                    throw new NullReferenceException("Nemoguće obrisati autobus koji ne postoji!");
+                    throw new NullReferenceException("Nemoguće obrisati cvijet koji ne postoji!");
                 else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null)
-                    throw new InvalidOperationException("Nemoguće obrisati autobsu koji ne postoji!");
+                    throw new InvalidOperationException("Nemoguće obrisati cvijet koji ne postoji!");
                 else
                 {
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
                 }
             }
-            if (opcija > -1)
+            if (opcija <= -1 || opcija > 2)
                 throw new InvalidOperationException("Unijeli ste nepoznatu opciju!");
         }
 
