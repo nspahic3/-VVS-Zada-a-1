@@ -12,7 +12,7 @@ namespace Cvjecara
 
         string popustKod, opis;
         double postotakPopusta;
-        int brojač = -50050505;
+        int brojač = 0;
 
         #endregion
 
