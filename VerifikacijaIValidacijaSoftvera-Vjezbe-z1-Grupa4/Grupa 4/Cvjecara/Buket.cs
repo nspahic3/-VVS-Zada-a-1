@@ -25,7 +25,7 @@ namespace Cvjecara
             set
             {
                 foreach (var dodatak in value)
-                    if (dodatak != "BLATOBRAN" && dodatak != "BLATOBRAN" && dodatak != "BLATOBRAN")
+                    if (dodatak != "LIST" && dodatak != "VEZICA" && dodatak != "UKRASNI PAPIR")
                         throw new NotSupportedException("Dodaci koje ste unijeli nisu podržani!");
                 dodaci = value;
             }
