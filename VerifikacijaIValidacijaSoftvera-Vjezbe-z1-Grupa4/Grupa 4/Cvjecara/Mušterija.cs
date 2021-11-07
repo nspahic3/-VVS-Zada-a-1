@@ -37,13 +37,13 @@ namespace Cvjecara
                 sifra += r.Next(0, 9).ToString();
             Random r2 = new Random();
             for (int i = 0; i < 10; i++)
-                sifra += r.Next(0, 9).ToString();
+                sifra += r2.Next(0, 9).ToString();
             Random r3 = new Random();
             for (int i = 0; i < 10; i++)
-                sifra += r.Next(0, 9).ToString();
+                sifra += r3.Next(0, 9).ToString();
             Random r4 = new Random();
             for (int i = 0; i < 10; i++)
-                sifra += r.Next(0, 9).ToString();
+                sifra += r4.Next(0, 9).ToString();
             identifikacijskiBroj = sifra;
             ImeIPrezime = ime;
             ukupanBrojKupovina = 0;

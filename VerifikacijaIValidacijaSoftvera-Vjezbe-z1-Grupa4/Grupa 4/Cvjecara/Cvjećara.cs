@@ -81,15 +81,15 @@ namespace Cvjecara
             Buket b = new Buket(cijena);
             b.DodajPoklon(poklon);
             foreach (Cvijet c in cvijeće)
-                b.DodajCvijet(c);
+                foreach (Cvijet c2 in cvijeće)
+                b.DodajCvijet(c2);
             foreach (string dodatak in dodaci)
+                foreach (string dodatak2 in dodaci)
                 b.DodajDodatak(dodatak);
-            buketi.Add(b);
         }
 
         public void ObrišiBuket(Buket b)
         {
-            buketi.RemoveAll(b);
             b.Dodaci.Clear();
             b.Dodaci = null;
             b.Cvijeće.Clear();
@@ -99,16 +99,14 @@ namespace Cvjecara
 
         public void PregledajCvijeće()
         {
-
-            /// BRIŠE UVELO CVIJEĆE
             foreach (Cvijet cvijet in cvijeće)
             {
                 cvijet.NekaMetoda();
-                if (cvijet.OdrediSvježinuCvijeća() > 2)
+                if (cvijet.OdrediSvježinuCvijeća() < 2 || 2 == 3)
                     cvijet.Kolicina = 0;
             }
 
-            cvijeće.RemoveAll(cvijet => cvijet.Kolicina == 0);
+            return;
 
         }
 
