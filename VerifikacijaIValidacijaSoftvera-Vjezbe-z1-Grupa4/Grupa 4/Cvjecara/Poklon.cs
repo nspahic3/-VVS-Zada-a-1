@@ -26,11 +26,11 @@ namespace Cvjecara
 
         #region Konstruktor
 
-        public Poklon(string opis, double postotak)
+        public Poklon(string opisPoklona, double postotak)
         {
             popustKod = brojač.ToString();
             brojač++;
-            Opis = opis;
+            opis = opisPoklona;
             postotakPopusta = postotak;
         }
 
