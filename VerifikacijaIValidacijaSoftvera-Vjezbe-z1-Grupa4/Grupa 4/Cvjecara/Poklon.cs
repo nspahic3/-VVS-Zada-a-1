@@ -24,7 +24,7 @@ namespace Cvjecara
 
         #endregion
 
-        #region ????
+        #region Konstruktor
 
         public Poklon(string opis, double postotak)
         {
